@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+   <header class="bg-dark py-2 fixed-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="#">HS ShopEase</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#login">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#shop">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline ml-lg-3">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Welcome to HS ShopEase</h1>
+            <p>Your one-stop shop for everything you need</p>
+            <a href="#shop" class="btn btn-primary btn-lg">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Login and Register Sections -->
+    <section class="py-5" id="login">
+        <div class="container">
+            <h2 class="text-center mb-4 mt-5">Login & Register</h2><hr>
+            <div class="row justify-content-center">
+                <!-- Login Section -->
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="text-center" style="margin-top: 57px;">Sign In</h3>
+                            <div class="text-center mt-3">
+                                    <p>Sign in using your username and password.</p>
+                                </div>
+                            <form>
+                                <div class="form-group">
+                                    <label for="loginUsername">Username</label>
+                                    <input type="text" class="form-control" id="loginUsername" placeholder="Enter your username" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="loginPassword">Password</label>
+                                    <input type="password" class="form-control" id="loginPassword" placeholder="Enter your password" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary form-control ">Login</button>
+                                <div class="text-center mt-3">
+                                    <p>Don't have an account? Please register through the form on right side.</p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Register Section -->
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="text-center">Register</h3>
+                            <form>
+                                <div class="form-group">
+                                    <label for="registerUsername">Username</label>
+                                    <input type="text" class="form-control" id="registerUsername" placeholder="Enter your username" equired>
+                                </div>
+                                <div class="form-group">
+                                    <label for="registerEmail">Email</label>
+                                    <input type="email" class="form-control" id="registerEmail" placeholder="Enter your email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="registerPassword">Password</label>
+                                    <input type="password" class="form-control" id="registerPassword" placeholder="Enter your password" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="confirmPassword">Confirm Password</label>
+                                    <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm your password" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary form-control ">Register</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Featured Products -->
+    <section class="py-5" id="shop" class="saeed">
+        <div class="container">
+            <h2 class="text-center mb-4 mt-5"> Shop Featured Products</h2><hr>
+            <div id="featuredProductsCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="img/product1.jpg" class="card-img-top" alt="Wireless Headphones">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Wireless Headphones</h5>
+                                        <p class="card-text">$19.99</p>
+                                        <a href="#" class="btn btn-primary form-control">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="img/product2.jpg" class="card-img-top" alt="Noise-Canceling Earbuds">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Wireless Charger</h5>
+                                        <p class="card-text">$24.99</p>
+                                        <a href="#" class="btn btn-primary form-control">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="img/product3.jpg" class="card-img-top" alt="Smart Thermostat">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Smart Thermostat</h5>
+                                        <p class="card-text">$29.99</p>
+                                        <a href="#" class="btn btn-primary form-control">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="img/product4.jpg" class="card-img-top" alt="Leather Wallet">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Leather Wallet</h5>
+                                        <p class="card-text">$9.99</p>
+                                        <a href="#" class="btn btn-primary form-control">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="img/product5.jpg" class="card-img-top" alt="Fitness Tracker">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Fitness Tracker</h5>
+                                        <p class="card-text">$14.99</p>
+                                        <a href="#" class="btn btn-primary form-control">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="img/product6.jpg" class="card-img-top" alt="4K Ultra HD TV">
+                                    <div class="card-body">
+                                        <h5 class="card-title">4K Ultra HD TV</h5>
+                                        <p class="card-text">$99.99</p>
+                                        <a href="#" class="btn btn-primary form-control">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="img/product7.jpg" class="card-img-top" alt="Leather Wallet">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Designer Handbag</h5>
+                                        <p class="card-text">$49.99</p>
+                                        <a href="#" class="btn btn-primary form-control">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="img/product8.jpg" class="card-img-top" alt="Fitness Tracker">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Office Chairr</h5>
+                                        <p class="card-text">$49.99</p>
+                                        <a href="#" class="btn btn-primary form-control">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="img/product9.jpg" class="card-img-top" alt="4K Ultra HD TV">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Electric Kettle</h5>
+                                        <p class="card-text">$69.99</p>
+                                        <a href="#" class="btn btn-primary form-control">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev mr-3" href="#featuredProductsCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only ">Previous</span>
+                </a>
+                <a class="carousel-control-next text-danger" href="#featuredProductsCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon " aria-hidden="true"></span>
+                    <span class="sr-only ">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Shop Section -->
+    <section class="py-5 saeed" >
+        <div class="container">
+            <h2 class="text-center mb-4 mt-5">Shop By Category</h2>
+            <hr>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="img/category1.jpg" class="card-img-top" alt="Category 1">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Electronics</h5>
+                            <p class="card-text">All types of electronic products that you want.</p>
+                            <a href="#" class="btn btn-primary">View Products</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="img/category2.jpg" class="card-img-top" alt="Category 2">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Fashion</h5>
+                            <p class="card-text">All types of fashion products that you want.</p>
+                            <a href="#" class="btn btn-primary">View Products</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="img/category3.jpg" class="card-img-top" alt="Category 3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Sports</h5>
+                            <p class="card-text">All types of sports products that you want.</p>
+                            <a href="#" class="btn btn-primary">View Products</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Arrivals Section -->
+    <section class="py-5 saeed">
+        <div class="container">
+            <h2 class="text-center mb-4 mt-5">New Arrivals</h2>
+            <hr>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="img/newarrival1.jpg" class="card-img-top" alt="Smartwatch">
+                        <div class="card-body">
+                            <h5 class="card-title">Smartwatch</h5>
+                            <p class="card-text">$99.99</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="img/newarrival2.jpg" class="card-img-top" alt="Sneakers">
+                        <div class="card-body">
+                            <h5 class="card-title">Sneakers</h5>
+                            <p class="card-text">$49.99</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="img/newarrival3.jpg" class="card-img-top" alt="Blender">
+                        <div class="card-body">
+                            <h5 class="card-title">Blender</h5>
+                            <p class="card-text">$29.99</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="img/newarrival4.jpg" class="card-img-top" alt="Running Shoes">
+                        <div class="card-body">
+                            <h5 class="card-title">MacBook</h5>
+                            <p class="card-text">$69.99</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About Us Section -->
+    <section class="py-5" id="about" class="saeed">
+        <div class="container">
+            <h2 class="text-center mb-4 mt-5">About Us</h2>
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class=" mb-1">Our Story</h2><hr>
+                    <p>ShopEase was founded with the mission of providing high-quality products at affordable prices. Our journey began with a small team of dedicated professionals who wanted to make online shopping easier and more accessible for everyone.</p>
+                    <p>Today, ShopEase is a leading e-commerce platform that offers a wide range of products, from electronics to fashion, sports equipment, and more. Our commitment to customer satisfaction and our passion for excellence have driven our growth and success.</p>
+                </div>
+                <div class="col-md-6 ">
+                    <h2 class=" mb-1">Our Values</h3><hr>
+                    <ul>
+                        <li><strong class="text-dark">Quality:</strong>   We strive to offer the best products available in the market.</li>
+                        <li><strong class="text-dark">Affordability:</strong> Our prices are competitive and fair.</li>
+                        <li><strong class="text-dark">Customer Satisfaction:</strong> We are committed to providing excellent customer service.</li>
+                        <li><strong class="text-dark">Innovation:</strong> We continuously improve our platform to enhance your shopping experience.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4 mt-5">What Our Customers Say</h2>
+            <hr>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <p class="card-text">"ShopEase has the best products and the best prices. I'm a customer for life!"</p>
+                            <h5 class="card-title">- Saeed Hussain</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <p class="card-text">"The customer service at ShopEase is exceptional. They really care about their customers."</p>
+                            <h5 class="card-title">- Ajlal Murtaza</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <p class="card-text">"I love shopping at ShopEase.The website is easy to use. The products are always top-notch."</p>
+                            <h5 class="card-title">- Shah Faisal Khan</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-5" id="contact" class="contact">
+        <div class="container">
+            <h2 class="text-center mb-4 mt-5">Contact Us</h2><hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <form>
+                        <div class="form-group">
+                            <label for="name"><h4>Name</h4></label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email"><h4>Email</h4></label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message"><h4>Message</h4></label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <h3>Get in Touch</h3><hr>
+                    <p>If you have any questions, comments, or concerns, please don't hesitate to contact us. Our customer service team is here to help you.</p>
+                    <ul>
+                        <li class="my-3"><strong>Email:</strong> support@shopease.com</li>
+                        <li class="my-3"><strong>Phone:</strong> +1 234 567 890</li>
+                        <li><strong>Address:</strong> 1234 Market Bhakkar, Punjab</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 HS ShopEase. All Rights Reserved.</p>
+            <p>Follow us on:
+                <a href="https://www.facebook.com/profile.php?id=100095275393216&mibextid=ZbWKwL" class="text-white">Facebook</a> |
+                <a href="https://www.tiktok.com/@saeedhussain402?_t=8nOzL381vol&_r=1" class="text-white">Tiktok</a> |
+                <a href="https://www.instagram.com/saeed_hussain77?igsh=bWtkYXEwYTB4cWlj" class="text-white">Instagram</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="  sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity=" sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
